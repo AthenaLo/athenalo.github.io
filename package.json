@@ -11,5 +11,8 @@
     "url": "https://github.com/kairuiwang/athenawhoa"
   },
   "author": "Athena Lo <athena.w.lo@gmail.com>, Kairui Wang <kairuiwang@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "skeleton-css": "2.0.4"
+  }
 }
