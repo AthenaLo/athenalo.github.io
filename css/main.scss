@@ -16,6 +16,11 @@ $about-offset: $get-connected-height + $social-height;
   src: url(../fonts/cheddar-jack.ttf);
 }
 
+@font-face {
+  font-family: "gotham-round";
+  src: url(../fonts/GothamRnd-Book.otf);
+}
+
 body {
   background-image: url(../img/cube.png);
   background-repeat: repeat;
@@ -25,6 +30,7 @@ body {
 .navbar {
   background-color: $main-light-color;
   height: $navbar-height;
+  font-family: "gotham-round";
   font-size: 15px;
   color: $main-dark-color;
   line-height: $navbar-height;
@@ -131,6 +137,7 @@ body {
     .project-text {
       color: $main-dark-color;
       height: 5vh;
+      font-family: "gotham-round";
       font-size: 2vh;
       padding-left: 1.2vw;
       padding-right: 1.2vw;
@@ -159,7 +166,7 @@ body {
   .get-connected {
     $tea-time-height: 7.6vh;
     height: $get-connected-height;
-    width: 38%;
+    width: 44%;
     margin: 0 auto;
     overflow: hidden;
 
@@ -169,6 +176,7 @@ body {
       line-height: $tea-time-height;
       background-color: $second-light-color;
       font-size: 2.2vh;
+      font-family: "gotham-round";
       text-align: center;
       color: $main-dark-color;
 
@@ -197,6 +205,7 @@ body {
       .preamble-text {
         display: inline-block;
         line-height: $preamble-line-height;
+      	font-family: "gotham-round";
         font-size: 2.2vh;
         padding-right: 2vh;
         }
@@ -218,6 +227,7 @@ body {
 
     .postamble {
       padding-top: 12vh;
+      font-family: "gotham-round";
       font-size: 1.8vh;
       color: $main-dark-color;
     } 

@@ -1,6 +1,9 @@
 @font-face {
   font-family: "cheddar-jack";
   src: url(../fonts/cheddar-jack.ttf); }
+@font-face {
+  font-family: "gotham-round";
+  src: url(../fonts/GothamRnd-Book.otf); }
 body {
   background-image: url(../img/cube.png);
   background-repeat: repeat;
@@ -9,6 +12,7 @@ body {
 .navbar {
   background-color: #f1f4f7;
   height: 40px;
+  font-family: "gotham-round";
   font-size: 15px;
   color: #303546;
   line-height: 40px;
@@ -84,6 +88,7 @@ body {
 .panel#work .work-container .project-text {
   color: #303546;
   height: 5vh;
+  font-family: "gotham-round";
   font-size: 2vh;
   padding-left: 1.2vw;
   padding-right: 1.2vw; }
@@ -104,7 +109,7 @@ body {
   height: 44vh; }
 .panel#contact .get-connected {
   height: 14vh;
-  width: 38%;
+  width: 44%;
   margin: 0 auto;
   overflow: hidden; }
 .panel#contact .get-connected .tea-time {
@@ -113,6 +118,7 @@ body {
   line-height: 7.6vh;
   background-color: #f2f2f2;
   font-size: 2.2vh;
+  font-family: "gotham-round";
   text-align: center;
   color: #303546; }
 .panel#contact .get-connected .tea-time .call-to-action {
@@ -130,6 +136,7 @@ body {
 .panel#contact .social .social-links .preamble-text {
   display: inline-block;
   line-height: 12vh;
+  font-family: "gotham-round";
   font-size: 2.2vh;
   padding-right: 2vh; }
 .panel#contact .social .social-links .links {
@@ -142,6 +149,7 @@ body {
   padding-right: 2vh; }
 .panel#contact .social .postamble {
   padding-top: 12vh;
+  font-family: "gotham-round";
   font-size: 1.8vh;
   color: #303546; }
 
