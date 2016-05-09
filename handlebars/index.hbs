@@ -1,0 +1,70 @@
+<!DOCTYPE htmL>
+<html lang="en">
+{{> head}}
+<body>
+  <!-- Navbar -->
+  {{> navbar}}
+
+  <a id="home"></a>
+  <a id="work"></a>
+  <a id="about"></a>
+  <a id="contact"></a>
+
+  <!-- Splash photo -->
+  <section id="main">
+    <section class="panel" id="home">
+      <div class="five columns greeting-block">
+          Oh hello! You found me!
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="panel" id="work">
+      <div class="container work-container">
+        <div class="row">
+          <div class="one-third column project-card">
+            <div class="project-image" id="video-feedback"></div>
+            <div class="project-text">Video Feedback<br>eSpark</div>
+          </div>
+
+          <div class="one-third column project-card">
+            <div class="project-image" id="student-delight"></div>
+            <div class="project-text">Student Delight<br>eSpark</div>
+          </div>
+
+          <div class="one-third column project-card">
+            <div class="project-image" id="buddy-system"></div>
+            <div class="project-text">Buddy System</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one-third column project-card">
+            <div class="project-image" id="urban-agriculture"></div>
+            <div class="project-text">Urban Agriculture<br>Exhibit Design</div>
+          </div>
+
+          <div class="one-third column project-card">
+            <div class="project-image" id="rest-your-tired-bones"></div>
+            <div class="project-text">Rest Your Tired Bones<br>Furniture Design</div>
+          </div>
+
+          <div class="one-third column project-card">
+            <div class="project-image" id="windshield-glass"></div>
+            <div class="project-text">Windshield Glass<br>Jewelry</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="panel" id="about">
+      <div class="five columns header-block">
+        A human bean
+      </div>
+    </section>
+
+    <!-- Contact -->
+    {{> footer}}
+  </section>
+</body>
+</html>
