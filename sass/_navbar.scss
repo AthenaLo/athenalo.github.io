@@ -1,0 +1,37 @@
+$navbar-height: 40px;
+
+@import 'constants';
+
+.navbar {
+  background-color: $main-light-color;
+  height: $navbar-height;
+  font-family: "gotham-round";
+  font-size: 15px;
+  color: $main-dark-color;
+  line-height: $navbar-height;
+  position: fixed;
+  z-index: 100;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .nav-cube {
+    background-image: url(../img/Nav-Cube.png);
+    width: 29px;
+    height: 32px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 1.5vw;
+  }
+
+  .nav-links {
+    list-style-type: none;
+
+    .nav-link {
+      width: 6vw;
+    }
+  }
+}
+

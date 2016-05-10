@@ -1,0 +1,75 @@
+@import 'constants';
+
+.panel#contact {
+  height: $get-connected-height + $social-height;
+
+  .get-connected {
+    $tea-time-height: 7.6vh;
+    height: $get-connected-height;
+    width: 44%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .tea-time {
+      margin-top: ($get-connected-height - $tea-time-height) / 2;
+      margin-bottom: ($get-connected-height - $tea-time-height) / 2;
+      line-height: $tea-time-height;
+      background-color: $second-light-color;
+      font-size: 2.2vh;
+      font-family: "gotham-round";
+      text-align: center;
+      color: $main-dark-color;
+
+      .call-to-action {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .social {
+    $preamble-line-height: 12vh;
+
+    height: $social-height;
+    background-color: $second-light-color;
+    text-align: center;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .social-links {
+      color: $main-dark-color;
+      height: $preamble-line-height;
+
+      .preamble-text {
+        display: inline-block;
+        line-height: $preamble-line-height;
+        font-family: "gotham-round";
+        font-size: 2.2vh;
+        padding-right: 2vh;
+        }
+
+      .links {
+        display: inline-block;
+        height: $preamble-line-height;
+
+        i {
+          $icon-size: 6vh;
+
+          font-size: $icon-size;
+          padding-top: ($preamble-line-height - $icon-size) / 2;
+          padding-left: 2vh;
+          padding-right: 2vh;
+        }
+      }
+    }
+
+    .postamble {
+      padding-top: 12vh;
+      font-family: "gotham-round";
+      font-size: 1.8vh;
+      color: $main-dark-color;
+    } 
+  }
+}

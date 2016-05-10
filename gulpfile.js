@@ -5,7 +5,7 @@ var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 
 gulp.task('css', function() {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src(['./sass/**/*.scss', '!./sass/**/_*.scss'])
              .pipe(sass())
 	     .pipe(cleanCSS({compatibility: 'ie8'}))
 	     .pipe(gulp.dest('./css'));
@@ -16,7 +16,7 @@ gulp.task('html', function() {
   var options = {
     batch: ['./handlebars/partials']
   }
-  return gulp.src('./handlebars/**/*.hbs')
+  return gulp.src(['./handlebars/**/*.hbs', '!./handlebars/partials/*'])
 	     .pipe(handlebars(templateData, options))
 	     .pipe(rename(function(path) {
 	     	path.extname = ".html";

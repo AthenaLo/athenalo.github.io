@@ -1,0 +1,21 @@
+$main-dark-color: #303546;
+$main-light-color: #f1f4f7;
+$second-light-color: #f2f2f2;
+$work-border-color: rgba(166,172,189,1);
+
+$splash-image-height: 100vh;
+$work-height: 100vh;
+$about-height: 100vh;
+$get-connected-height: 14vh;
+$social-height: 30vh;
+$about-offset: $get-connected-height + $social-height;
+
+@font-face {
+  font-family: "cheddar-jack";
+  src: url(../fonts/cheddar-jack.ttf);
+}
+
+@font-face {
+  font-family: "gotham-round";
+  src: url(../fonts/GothamRnd-Book.otf);
+}
