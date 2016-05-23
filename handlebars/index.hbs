@@ -1,21 +1,21 @@
 <!DOCTYPE htmL>
 <html lang="en">
 <head>
-  <!-- CSS
-  --------- -->
-  <link rel="stylesheet" href="/css/normalize.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <!-- JavaScripts -->
+  <script src="js/jQuery-1.12.4.min.js"></script>
+  <script src="js/scroll.js"></script>
 </head>
 <body>
   <!-- Navbar -->
   {{> navbar}}
 
   <a id="home"></a>
-  <a id="work"></a>
-  <a id="about"></a>
-  <a id="contact"></a>
 
   <!-- Splash photo -->
   <section id="main">
@@ -26,6 +26,7 @@
     </section>
 
     <!-- Work -->
+    <a id="work"></a>
     <section class="panel" id="work">
       <div class="container work-container">
         <div class="row">
@@ -66,6 +67,7 @@
     </section>
 
     <!-- About -->
+    <a id="about"></a>
     <section class="panel" id="about">
       <div class="five columns header-block">
         A human bean
@@ -73,6 +75,7 @@
     </section>
 
     <!-- Contact -->
+    <a id="contact"></a>
     {{> footer}}
   </section>
 </body>

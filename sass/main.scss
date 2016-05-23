@@ -4,14 +4,12 @@
 @import 'footer';
 
 body {
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .panel {
   height: 368vh;
   z-index: 0;
-  -webkit-transition: -webkit-transform 0.8s ease-in-out;
-  transition: transform 0.8s ease-in-out;
 }
 
 .panel#home {
@@ -105,25 +103,4 @@ body {
     margin-top: 8vh;
     padding-left: 22vw;
   }
-}
-
-// Scrolling animations
-a[ id= "home" ]:target ~ #main section.panel {
-    -webkit-transform: translateY(0vh);
-    transform: translateY(0vh);
-}
-
-a[ id= "work" ]:target ~ #main section.panel {
-    -webkit-transform: translateY(-1 * $splash-image-height);
-    transform: translateY(-1 * $splash-image-height);
-}
-
-a[ id= "about" ]:target ~ #main section.panel {
-    -webkit-transform: translateY(-1 * ($splash-image-height + $work-height));
-    transform: translateY(-1 * ($splash-image-height + $work-height));
-}
-
-a[ id= "contact" ]:target ~ #main section.panel {
-    -webkit-transform: translateY(-1 * ($splash-image-height + $work-height + $about-offset));
-    transform: translateY(-1 * ($splash-image-height + $work-height + $about-offset));
 }
