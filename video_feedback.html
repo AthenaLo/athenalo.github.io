@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
   <!-- CSS  -->
-  <link rel="stylesheet" href="node_modules/skeleton-css/css/normalize.css">
-  <link rel="stylesheet" href="node_modules/skeleton-css/css/skeleton.css">
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/project_details.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/slick/slick.css">
+  <link rel="stylesheet" href="css/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/video_feedback.css">
+
+  <!-- JavaScripts -->
+  <script src="js/jQuery-1.12.4.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/vf-carousel.js"></script>
 </head>
 <body>
   <!-- Navbar -->
@@ -28,32 +35,88 @@
     </div>
   </nav>
 
+  <!-- Opening image -->
+  <section class="opening"></section>
+
+  <!-- Project title -->
+    <section class="title u-full-width">
+      <p class="project-title">Student-Teacher Project Feedback Loop</p>
+      <p class="client">UI/UX for eSpark Learning</p>
+    </section>
+
   <!-- Project details -->
-  <section class="project-details">
+  <section class="project-description">
     <div class="container">
-      <div class="row">
-	<div class="one-half column">
-	  <div class="project-image" id="video-feedback"></div>
+      <div class="row full-width-text-block text-block-1">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+	et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+	aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+      </div>
+    </div>
+
+    <div class="full-width-image-block image-block-1 u-full-width">
+      <div class="container">
+      	<div class="vf-problem-img"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row full-width-text-block text-block-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat.
+
+	<div class="vf-flow-img"></div>
+	<div class="row">
+	  <div class="six columns">
+	    <div class="vf-process-1-img"></div>
+	  </div>
+	  <div class="six columns">
+	    <div class="vf-process-2-img"></div>
+	  </div>
 	</div>
-	<div class="one-half column project-text">
-	  <h1>Video Feedback eSpark</h1>
-	  <article class="project-accomplishments">
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel erat quis arcu pulvinar finibus. Mauris et euismod urna. Etiam suscipit eros nec elit fringilla, ut pretium ligula malesuada. Mauris non tristique libero, sollicitudin lobortis ligula. Pellentesque id sollicitudin nulla. Duis rhoncus sapien odio, eu aliquam sem cursus eu. Proin eu sapien scelerisque, sollicitudin ligula vitae, fringilla justo.
-  </p>
-  <p>
-  Pellentesque at tincidunt arcu, at viverra lacus. Nam sollicitudin sodales imperdiet. Pellentesque id semper nunc. Nullam pulvinar nulla at dolor porta, id fermentum metus molestie. In ac libero a arcu eleifend posuere. Fusce dapibus, nunc sit amet mattis dictum, purus est dignissim libero, quis lobortis lectus ligula dignissim lectus. Integer rutrum congue euismod. Maecenas vestibulum, erat lobortis laoreet pretium, nisl urna porttitor dolor, sed gravida ipsum orci id quam. Sed congue eu nibh vitae ullamcorper. Nulla elit ante, luctus pellentesque purus sed, euismod porta massa.
-  </p>
-  <p>
-  Nulla congue risus nec mauris finibus, eu volutpat dolor venenatis. Ut nec ante feugiat, congue dui non, gravida ipsum. Aliquam ultricies enim eu ultricies ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed viverra, nunc vel hendrerit euismod, tortor erat varius tellus, id maximus quam magna in ipsum. Aliquam tincidunt massa urna, in aliquet orci malesuada nec. Morbi nisi quam, placerat id efficitur ac, efficitur vitae est. Sed accumsan cursus diam sit amet fringilla. Phasellus dictum pharetra dui, pellentesque pharetra sapien tincidunt eget.
-  </p>
-	  </article>
+	<div class="row">
+	  <div class="vf-process-3-img"></div>
 	</div>
       </div>
     </div>
+
+    <div class="row full-width-image-block image-block-2 u-full-width">
+      <div class="container">
+	<div class="row">
+	  <div class="seven columns">
+	    <div class="vf-solution-carousel">
+	      <div class="vf-solution-1-img"></div>
+	      <div class="vf-solution-2-img"></div>
+	      <div class="vf-solution-3-img"></div>
+	      <div class="vf-solution-4-img"></div>
+	      <div class="vf-solution-5-img"></div>
+	      <div class="vf-solution-6-img"></div>
+	    </div>
+	  </div>
+	  <div class="five columns text-block">
+	    <p>
+	    Lorem ipsum dolor sit amet,
+	    consectetur adipiscing elit, 
+	    sed do eiusmod tempor 
+	    incididunt ut labore et dolore 
+	    magna aliqua. 
+	    </p>
+            <p>
+	    Ut enim ad minim veniam, quis 
+	    nostrud exercitation ullamco 
+	    laboris nisi ut aliquip ex ea 
+	    commodo consequat. Duis aute 
+	    irure dolor in reprehenderit in 
+	    voluptate velit esse cillum
+	    </p>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="afterword image-block-3 u-full-width"></div>
   </section>
-
-
 
   <!-- Contact -->
   <!-- Contact -->

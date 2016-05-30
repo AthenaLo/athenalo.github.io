@@ -1,0 +1,154 @@
+@import 'project_details';
+
+$image-block-height: 54vh;
+
+.opening {
+  background-image: url(../img/VF_Hero.png);
+  background-size: contain;
+  background-position: center;
+  height: $project-opening-image-height;
+}
+
+.title {
+  background-color: $main-dark-color;
+  text-align: center;
+
+  .project-title {
+    color: $main-light-color;
+    font-family: 'gotham-round-light';
+    font-size: 2.4vh;
+    font-weight: 100;
+    line-height: 4vh;
+    padding-top: 1.5vh;
+    padding-bottom: 0.2vh;
+    margin: 0px;
+  }
+
+  .client {
+    color: $faded-gray-color;
+    font-family: 'gotham-round';
+    line-height: 1.6vh;
+    font-size: 1.6vh;
+    padding-bottom: 1.8vh;
+  }
+}
+
+.project-description {
+  .full-width-text-block {
+    font-family: "gotham-round";
+    color: $main-dark-color;
+    line-height: 20px;
+    font-size: 15px;
+    margin-bottom: 3vh;
+  }
+
+  .full-width-image-block {
+    background-color: $main-light-color;
+    height: $image-block-height;
+  }
+
+  .image-block-1 {
+    padding-top: 3vh;
+    margin-bottom: 3.5vh;
+  }
+
+  .vf-problem-img {
+    @include single-img("../img/VF_Problem.png");
+    height: 48vh;
+  }
+
+  .vf-flow-img {
+    @include single-img("../img/VF_Flow.png");
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+    height: 60vh;
+  }
+
+  .vf-process-1-img {
+    @include single-img("../img/VF_Process1.png");
+    height: 24vh;
+  }
+
+  .vf-process-2-img {
+    @include single-img("../img/VF_Process2.png");
+    height: 24vh;
+  }
+
+  .vf-process-3-img {
+    @include single-img("../img/VF_Process3.png");
+    height: 24vh;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  $solution-carousel-height: $image-block-height - 10vh;
+
+  .vf-solution-carousel {
+     padding-top: 4vh;
+     height: $solution-carousel-height;
+     
+     .slick-dots {
+	width: auto;
+	transform: translateY(5vh);
+	padding-left: 12vw;
+     }
+
+    .dot {
+      color: $light-gray-color;
+      font-size: 1.7vh;
+    }
+
+    .slick-active {
+      color: $main-dark-color;
+    }
+  }
+
+  .text-block {
+    padding-top: 4vh;
+    font-family: "gotham-round";
+    color: $main-dark-color;
+  }
+
+  .vf-solution-1-img {
+    @include single-img("../img/VF_Solution1.png");
+    height: $solution-carousel-height;
+  }
+
+  .vf-solution-2-img {
+    @include single-img("../img/VF_Solution2.png");
+    height: $solution-carousel-height;
+  }
+
+  .vf-solution-3-img {
+    @include single-img("../img/VF_Solution3.png");
+    height: $solution-carousel-height;
+  }
+
+  .vf-solution-4-img {
+    @include single-img("../img/VF_Solution4.png");
+    height: $solution-carousel-height;
+  }
+
+  .vf-solution-5-img {
+    @include single-img("../img/VF_Solution5.png");
+    height: $solution-carousel-height;
+  }
+
+  .vf-solution-6-img {
+    @include single-img("../img/VF_Solution6.png");
+    height: $solution-carousel-height;
+  }
+
+  .image-block-3 {
+    width: 50%;
+    margin: 0 auto;
+    @include single-img("../img/VF_Afterword.png");
+    height: 40vh;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+  }
+}
