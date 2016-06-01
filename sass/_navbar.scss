@@ -23,7 +23,7 @@ $navbar-height: 40px;
     height: 32px;
     margin-top: 4px;
     margin-bottom: 4px;
-    margin-right: 1.5vw;
+    margin-right: 15px;
   }
 
   .nav-links {
@@ -35,10 +35,18 @@ $navbar-height: 40px;
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 501px) {
+  .hamburger {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
+  .hamburger {
+    font-size: 24px;
+    line-height: $navbar-height;
+  }
+
   .nav-links {
     display: none;
   }
