@@ -6,13 +6,20 @@ $(document).ready(function(){
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3500,
     slidesToShow: 1,
     customPaging: function(slider, i) {
       return '<i class="fa fa-circle dot" aria-hidden="true"></i>';
     }
   }).on('afterChange', function(event, slick, currentSlide, nextSlide){
-    next_active = $('.slick-active').parent().next().children('.dot');
+    last_dot = $('.slick-dots').children().last().children('.dot');
+    if ($('i.slick-active')[0] === last_dot[0]) {
+      // The current dot is the last dot
+      next_active = $('i.slick-active').parent().parent().children().first().children('.dot');
+    } else {
+      // The current dot is not the last dot
+      next_active = $('i.slick-active').parent().next().children('.dot');
+    }
     $('.dot').removeClass('slick-active');
     next_active.addClass('slick-active');
   }); 
