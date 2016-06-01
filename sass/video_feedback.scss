@@ -11,7 +11,7 @@ $image-block-height: 54vh;
 
   .full-width-image-block {
     background-color: $main-light-color;
-    height: $image-block-height;
+    min-height: $image-block-height;
   }
 
   .image-block-1 {
@@ -56,13 +56,12 @@ $image-block-height: 54vh;
 
   .vf-solution-carousel {
      padding-top: 4vh;
-     height: $solution-carousel-height;
+     min-height: $solution-carousel-height;
      
-     .slick-dots {
-	width: auto;
-	transform: translateY(5vh);
-	padding-left: 12vw;
-     }
+      .slick-dots {
+        transform: translateY(2vh);
+	padding-bottom: 1vh;
+      }
 
     .dot {
       color: $light-gray-color;
