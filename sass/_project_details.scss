@@ -3,6 +3,11 @@
 @import 'body';
 @import 'footer';
 
+body {
+  background-image: none;
+  background-color: white;
+}
+
 @mixin single-img($url) {
   background-image: url($url);
   background-size: contain;
