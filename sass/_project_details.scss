@@ -8,3 +8,48 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+@mixin opening-image($url) {
+  .opening {
+    background-image: url($url);
+    background-size: contain;
+    background-position: center;
+    height: $project-opening-image-height;
+  }
+}
+
+@mixin title-banner {
+  .title {
+    background-color: $main-dark-color;
+    text-align: center;
+
+    .project-title {
+      color: $main-light-color;
+      font-family: 'gotham-round-light';
+      font-size: 2.4vh;
+      font-weight: 100;
+      line-height: 4vh;
+      padding-top: 1.5vh;
+      padding-bottom: 0.2vh;
+      margin: 0px;
+    }
+
+    .client {
+      color: $faded-gray-color;
+      font-family: 'gotham-round';
+      line-height: 1.6vh;
+      font-size: 1.6vh;
+      padding-bottom: 1.8vh;
+    }
+  }
+}
+
+@mixin full-width-text-block {
+  .full-width-text-block {
+    font-family: "gotham-round";
+    color: $main-dark-color;
+    line-height: 20px;
+    font-size: 15px;
+    margin-bottom: 3vh;
+  }
+}

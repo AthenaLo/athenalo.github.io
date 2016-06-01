@@ -45,6 +45,10 @@ body {
       margin-top: 3vh;
       margin-bottom: 2vh;
       text-align: center;
+
+      a {
+        text-decoration: none;
+      }
     }
 
     .project-image {
@@ -64,7 +68,7 @@ body {
     }
 
     .project-image#buddy-system {
-      background-image: url(http://api.ning.com/files/vOQMXCMD51-SuWJgOoBeBs9AF9gRg4wx92KpcMuexMtk*iq4D14n8rO6axD4XsWMmboCjEnH2Sj32E-RLYaGHnPvDCoE3XlB/husky10.jpg);
+      background-image: url(../img/Buds_Hero.png);
     }
 
     .project-image#urban-agriculture {

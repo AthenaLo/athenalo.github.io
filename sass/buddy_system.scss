@@ -1,0 +1,9 @@
+@import 'project_details';
+
+@include opening-image("../img/Buds_Hero.png");
+
+@include title-banner;
+
+.project-description {
+  @include full-width-text-block;
+}
