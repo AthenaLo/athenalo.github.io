@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.vf-solution-carousel').slick({
+  $('.solution-carousel').slick({
     arrows: false,
     dots: true,
     slidesToShow: 1,

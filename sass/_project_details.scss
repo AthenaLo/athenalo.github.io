@@ -59,3 +59,47 @@ body {
     margin-bottom: 3vh;
   }
 }
+
+@mixin text-block {
+  .text-block {
+    padding-top: 4vh;
+    font-family: "gotham-round";
+    color: $main-dark-color;
+  }
+}
+
+
+$image-block-height: 54vh;
+
+@mixin full-width-image-block {
+  .full-width-image-block {
+    background-color: $main-light-color;
+    min-height: $image-block-height;
+  }
+}
+
+@mixin solution-carousel($solution-carousel-height) {
+  .solution-carousel {
+     min-height: $solution-carousel-height;
+     padding-bottom: 5vh;
+     
+      .slick-dots {
+        transform: translateY(-3vh);
+      }
+
+    .dot {
+      color: $light-gray-color;
+      font-size: 1.7vh;
+    }
+
+    .slick-active {
+      color: $main-dark-color;
+    }
+  }
+}
+
+@mixin afterword {
+  .afterword {
+    margin-bottom: 7vh;
+  }
+}

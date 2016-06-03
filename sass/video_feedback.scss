@@ -1,18 +1,12 @@
 @import 'project_details';
 
-$image-block-height: 54vh;
-
 @include opening-image("../img/VF_Hero.png");
 
 @include title-banner;
 
 .project-description {
   @include full-width-text-block;
-
-  .full-width-image-block {
-    background-color: $main-light-color;
-    min-height: $image-block-height;
-  }
+  @include full-width-image-block;
 
   .image-block-1 {
     padding-top: 3vh;
@@ -42,7 +36,7 @@ $image-block-height: 54vh;
   .vf-process-3-img {
     @include single-img("../img/VF_Process3.png");
     height: 24vh;
-    margin-bottom: 1vh;
+    margin-bottom: 4vh;
   }
 
   .vf-process-4-img {
@@ -51,32 +45,11 @@ $image-block-height: 54vh;
     margin-bottom: 6vh;
   }
 
-
   $solution-carousel-height: 75vh;
 
-  .vf-solution-carousel {
-     min-height: $solution-carousel-height;
-     padding-bottom: 5vh;
-     
-      .slick-dots {
-        transform: translateY(-3vh);
-      }
+  @include solution-carousel($solution-carousel-height);
 
-    .dot {
-      color: $light-gray-color;
-      font-size: 1.7vh;
-    }
-
-    .slick-active {
-      color: $main-dark-color;
-    }
-  }
-
-  .text-block {
-    padding-top: 4vh;
-    font-family: "gotham-round";
-    color: $main-dark-color;
-  }
+  @include text-block;
 
   .vf-solution-1-img {
     @include single-img("../img/VF_Solution1.png");
@@ -113,13 +86,11 @@ $image-block-height: 54vh;
     height: $solution-carousel-height;
   }
 
-  .afterword {
-    margin-bottom: 7vh;
+  @include afterword;
 
-    .image-block-3 {
-      @include single-img("../img/VF_Afterword.png");
-      height: 55vh;
-      margin-top: 2vh;
-    }
+  .image-block-3 {
+    @include single-img("../img/VF_Afterword.png");
+    height: 55vh;
+    margin-top: 2vh;
   }
 }

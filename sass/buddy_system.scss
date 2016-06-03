@@ -6,4 +6,76 @@
 
 .project-description {
   @include full-width-text-block;
+  @include full-width-image-block;
+
+  .image-block-1 {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-bottom: 3.5vh;
+  }
+
+  .buds-problem-img {
+    @include single-img("../img/Buds_Problem.png");
+    height: 90vh;
+  }
+
+  .buds-process-1-img {
+    @include single-img("../img/Buds_Process1.png");
+    height: 70vh;
+  }
+
+  .buds-process-2-img {
+    @include single-img("../img/Buds_Process2.png");
+    height: 70vh;
+  }
+
+  .buds-process-3-img {
+    @include single-img("../img/Buds_Process3.png");
+    height: 70vh;
+    margin-bottom: 5vh;
+  }
+
+  $solution-carousel-height: 75vh;
+
+  @include solution-carousel($solution-carousel-height);
+
+  @include text-block;
+
+  .buds-solution-1-img {
+    @include single-img("../img/Buds_Solution1.png");
+    height: $solution-carousel-height;
+  }
+
+  .buds-solution-2-img {
+    @include single-img("../img/Buds_Solution2.png");
+    height: $solution-carousel-height;
+  }
+
+  .buds-solution-3-img {
+    @include single-img("../img/Buds_Solution3.png");
+    height: $solution-carousel-height;
+  }
+
+  .buds-solution-4-img {
+    @include single-img("../img/Buds_Solution4.png");
+    height: $solution-carousel-height;
+  }
+
+  .buds-solution-5-img {
+    @include single-img("../img/Buds_Solution5.png");
+    height: $solution-carousel-height;
+  }
+
+  .buds-solution-6-img {
+    @include single-img("../img/Buds_Solution6.png");
+    height: $solution-carousel-height;
+  }
+
+  @include afterword;
+
+  .image-block-3 {
+    @include single-img('../img/Buds_Afterword.png');
+    height: 75vh;
+    margin-top: 6vh;
+  }
 }
