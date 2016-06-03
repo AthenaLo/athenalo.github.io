@@ -24,43 +24,42 @@ $image-block-height: 54vh;
     height: 48vh;
   }
 
-  .vf-flow-img {
-    @include single-img("../img/VF_Flow.png");
+  .vf-process-1-img {
+    @include single-img("../img/VF_Process1.png");
     width: 80%;
     margin-left: 10%;
     margin-top: 3vh;
     margin-bottom: 6vh;
-    height: 60vh;
-  }
-
-  .vf-process-1-img {
-    @include single-img("../img/VF_Process1.png");
-    height: 24vh;
+    height: 55vh;
   }
 
   .vf-process-2-img {
     @include single-img("../img/VF_Process2.png");
     height: 24vh;
+    margin-bottom: 4vh;
   }
 
   .vf-process-3-img {
     @include single-img("../img/VF_Process3.png");
     height: 24vh;
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
   }
 
-  $solution-carousel-height: $image-block-height - 10vh;
+  .vf-process-4-img {
+    @include single-img("../img/VF_Process4.png");
+    height: 24vh;
+    margin-bottom: 6vh;
+  }
+
+
+  $solution-carousel-height: 75vh;
 
   .vf-solution-carousel {
-     padding-top: 4vh;
      min-height: $solution-carousel-height;
+     padding-bottom: 5vh;
      
       .slick-dots {
-        transform: translateY(2vh);
-	padding-bottom: 1vh;
+        transform: translateY(-3vh);
       }
 
     .dot {
@@ -109,12 +108,18 @@ $image-block-height: 54vh;
     height: $solution-carousel-height;
   }
 
-  .image-block-3 {
-    width: 50%;
-    margin: 0 auto;
-    @include single-img("../img/VF_Afterword.png");
-    height: 40vh;
-    margin-top: 6vh;
-    margin-bottom: 2vh;
+  .vf-solution-7-img {
+    @include single-img("../img/VF_Solution7.png");
+    height: $solution-carousel-height;
+  }
+
+  .afterword {
+    margin-bottom: 7vh;
+
+    .image-block-3 {
+      @include single-img("../img/VF_Afterword.png");
+      height: 55vh;
+      margin-top: 2vh;
+    }
   }
 }
