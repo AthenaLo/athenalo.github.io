@@ -4,7 +4,6 @@
 @import 'footer';
 
 .panel {
-  height: 368vh;
   z-index: 0;
 }
 
@@ -26,7 +25,7 @@
 }
 
 .panel#work {
-  height: $work-height;
+  min-height: $work-height;
 
   .work-container {
     padding-top: 8vh;
@@ -94,7 +93,7 @@
 
 .panel#about {
   background-color: $main-dark-color;
-  height: $about-height;
+  min-height: $about-height;
 
   .header-block {
     background-color: $main-light-color;
@@ -104,5 +103,25 @@
     line-height: 8vh;
     margin-top: 8vh;
     padding-left: 22vw;
+
+    .im-a-human-bean {
+      text-decoration: none;
+      color: $main-dark-color;
+    }
+  }
+
+  .selfie {
+    background-image: url(../img/chicago_kite.jpg);
+    background-size: cover;
+    height: 45vh;
+    margin-top: 7vh;
+  }
+
+  .description {
+    font-family: "gotham-round";
+    color: $main-light-color;
+    line-height: 22px;
+    font-size: 15px;
+    margin-top: 6vh;
   }
 }
