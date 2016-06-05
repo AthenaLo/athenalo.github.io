@@ -8,6 +8,10 @@
   @include full-width-text-block;
   @include full-width-image-block;
 
+  .text-block-1 {
+    overflow: auto;
+  }
+
   .image-block-1 {
     padding-top: 3vh;
     margin-bottom: 3.5vh;
