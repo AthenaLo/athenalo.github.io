@@ -69,11 +69,9 @@ body {
 }
 
 
-$image-block-height: 54vh;
-
-@mixin full-width-image-block {
+@mixin full-width-image-block($image-block-height: 54vh) {
   .full-width-image-block {
-    background-color: $main-light-color;
+    background-color: $second-light-color;
     min-height: $image-block-height;
   }
 }

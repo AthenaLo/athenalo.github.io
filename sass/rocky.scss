@@ -1,0 +1,96 @@
+@import 'project_details';
+
+@include opening-image("../img/Rocky_Hero.png");
+
+@include title-banner;
+
+@include text-block;
+
+.project-description {
+  @include full-width-text-block;
+  @include full-width-image-block;
+
+  .image-block-1 {
+    padding-top: 3vh;
+  }
+
+  .rocky-problem-img {
+    @include single-img("../img/Rocky_Problem.png");
+    height: 48vh;
+  }
+
+  .text-block-1 {
+    margin-top: 2vh;
+  }
+
+  .text-block-2 {
+    margin-top: 4vh;
+  }
+
+  .rocky-process-1-img {
+    @include single-img("../img/Rocky_Process1.png");
+    height: 76vh;
+  }
+
+  .rocky-process-2-img {
+    @include single-img("../img/Rocky_Process2.png");
+    height: 34vh;
+    margin-bottom: 2.5vh;
+  }
+
+  .rocky-process-3-img {
+    @include single-img("../img/Rocky_Process3.png");
+    height: 40vh;
+    margin-bottom: 7vh;
+  }
+
+  $solution-carousel-height: 75vh;
+
+  @include solution-carousel($solution-carousel-height);
+
+  .rocky-solution-1-img {
+    @include single-img("../img/Rocky_Solution1.png");
+    height: $solution-carousel-height;
+  }
+
+  .rocky-solution-2-img {
+    @include single-img("../img/Rocky_Solution2.png");
+    height: $solution-carousel-height;
+  }
+
+  @include afterword;
+
+  .image-row {
+    padding-top: 3vh;
+  }
+
+  .image-block-3 {
+    @include single-img('../img/Rocky_Afterword1.png');
+    height: 45vh;
+  }
+
+  .image-block-4 {
+    @include single-img('../img/Rocky_Afterword2.png');
+    height: 45vh;
+  }
+
+  .image-block-5 {
+    @include single-img('../img/Rocky_Afterword3.png');
+    height: 55vh;
+  }
+
+  .image-block-6 {
+    @include single-img('../img/Rocky_Afterword4.png');
+    height: 55vh;
+  }
+
+  .image-block-7 {
+    @include single-img('../img/Rocky_Afterword5.png');
+    height: 55vh;
+  }
+
+  .image-block-8 {
+    @include single-img('../img/Rocky_Afterword6.png');
+    height: 87vh;
+  }
+}

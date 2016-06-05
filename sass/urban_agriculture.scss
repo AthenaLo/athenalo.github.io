@@ -1,0 +1,60 @@
+@import 'project_details';
+
+@include opening-image("../img/UAE_Hero.png");
+
+@include title-banner;
+
+@include text-block;
+
+.project-description {
+  @include full-width-text-block;
+  @include full-width-image-block($image-block-height: 42vh);
+
+  .uae-problem-img {
+    @include single-img("../img/UAE_Problem.png");
+    height: 30vh;
+    margin-top: 6vh;
+  }
+
+  .text-block-2 {
+    margin-top: 4vh;
+  }
+
+  .uae-process-img {
+    @include single-img("../img/UAE_Process.png");
+    height: 32vh;
+    margin-bottom: 5vh;
+  }
+
+  $solution-carousel-height: 75vh;
+
+  @include solution-carousel($solution-carousel-height);
+
+  .uae-solution-1-img {
+    @include single-img("../img/UAE_Solution1.png");
+    height: $solution-carousel-height;
+  }
+
+  .uae-solution-2-img {
+    @include single-img("../img/UAE_Solution2.png");
+    height: $solution-carousel-height;
+  }
+
+  .uae-solution-3-img {
+    @include single-img("../img/UAE_Solution3.png");
+    height: $solution-carousel-height;
+  }
+
+  .uae-solution-4-img {
+    @include single-img("../img/UAE_Solution4.png");
+    height: $solution-carousel-height;
+  }
+
+  @include afterword;
+
+  .image-block-3 {
+    @include single-img('../img/UAE_Afterword.png');
+    height: 60vh;
+    margin-top: 4vh;
+  }
+}
