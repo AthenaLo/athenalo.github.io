@@ -16,11 +16,16 @@
   .greeting-block {
     background-color: $main-light-color;
     opacity: 0.8;
-    font-size: 2.5vw;
+    font-size: 5.2vh;
     font-family: "cheddar-jack";
     line-height: 8vh;
     margin-top: $splash-image-height - 15vh;
-    padding-left: 22vw;
+    padding-left: 5vw;
+    overflow: hidden;
+
+    @media (min-width: 850px) {
+      padding-left: 20vw;
+    }
   }
 }
 
