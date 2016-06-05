@@ -1,5 +1,8 @@
 $navbar-height: 40px;
 
+$cancel-float-offset: -5px;
+$mobile-menu-height: 128px + $cancel-float-offset;
+
 @import 'constants';
 
 .navbar {
@@ -39,16 +42,61 @@ $navbar-height: 40px;
   .hamburger {
     display: none;
   }
+
+  .mobile-nav-links {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
+  .nav-links {
+    display: none;
+  }
+
+  .container {
+    height: 40px;
+  }
+
   .hamburger {
     font-size: 24px;
     line-height: $navbar-height;
   }
 
-  .nav-links {
-    display: none;
+   .hide-mobile-nav-links {
+     display: none;
+   }
+
+  .mobile-nav-links {
+    background-color: $main-light-color;
+    color: $main-dark-color;
+    margin-left: 64.5vw;
+    width: 35vw;
+    height: $mobile-menu-height;
+
+    .links {
+      list-style-type: none;
+      height: $mobile-menu-height;
+      margin: 0;
+      text-align: center;
+      transform: translateY($cancel-float-offset);
+
+      .nav-link {
+    	border-style: none solid solid solid;
+    	border-width: 1px;
+
+        min-width: 35vw;
+	padding: 0;
+	margin: 0;
+
+	&:hover {
+	  background-color: $second-light-color;
+	}
+      }
+
+      .top-nav-link {
+        border-style: solid;
+      }
+    }
   }
 }
 

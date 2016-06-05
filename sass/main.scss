@@ -11,7 +11,7 @@
   background-image: url(../img/me_being_a_hipster.jpg);
   background-size: cover;
   background-position: center;
-  height: $splash-image-height;
+  min-height: $splash-image-height;
 
   .greeting-block {
     background-color: $main-light-color;
@@ -25,6 +25,7 @@
 }
 
 .panel#work {
+  overflow: auto;
   min-height: $work-height;
 
   .work-container {
@@ -93,6 +94,7 @@
 
 .panel#about {
   background-color: $main-dark-color;
+  overflow: auto;
   min-height: $about-height;
 
   .header-block {

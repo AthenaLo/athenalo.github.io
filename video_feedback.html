@@ -11,9 +11,11 @@
   <link rel="stylesheet" href="css/slick/slick-theme.css">
   
   <!-- JavaScripts -->
-  <script src="js/jQuery-1.12.4.min.js"></script>
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery-outside-events.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/carousel.js"></script>
+  <script src="js/hamburger.js"></script>
 
   <link rel="stylesheet" href="css/video_feedback.css">
 </head>
@@ -29,13 +31,27 @@
       </div>
   
       <div class="u-pull-right">
-        <i class="fa fa-bars hamburger"></i>
+      <a href="#void"><i class="fa fa-bars hamburger"></i></a>
         <ul class="nav-links">
           <li class="u-pull-left nav-link"><a class="nav" href="index.html#work">Work</a></li>
           <li class="u-pull-left nav-link"><a class="nav" href="index.html#about">About</a></li>
           <li class="u-pull-left nav-link"><a class="nav" href="index.html#contact">Contact</a></li>
         </ul>
       </div>
+    </div>
+  
+    <div class="mobile-nav-links hide-mobile-nav-links">
+      <ul class="links u-cf">
+        <a class="nav" href="index.html#work">
+          <li class="nav-link top-nav-link">Work</li>
+        </a>
+        <a class="nav" href="index.html#about">
+          <li class="nav-link">About</li>
+        </a>
+        <a class="nav" href="index.html#contact">
+          <li class="nav-link">Contact</li>
+        </a>
+      </ul>
     </div>
   </nav>
 
