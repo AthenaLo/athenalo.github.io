@@ -94,8 +94,8 @@
 
 .panel#about {
   background-color: $main-dark-color;
-  overflow: auto;
-  min-height: $about-height;
+  overflow: visible;
+  height: 100vh;
 
   .header-block {
     background-color: $main-light-color;
