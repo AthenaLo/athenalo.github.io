@@ -100,7 +100,7 @@
   .header-block {
     background-color: $main-light-color;
     opacity: 0.8;
-    font-size: 3vw;
+    font-size: 6vh;
     font-family: "cheddar-jack";
     line-height: 8vh;
     margin-top: 8vh;
@@ -125,5 +125,18 @@
     line-height: 22px;
     font-size: 15px;
     margin-top: 6vh;
+    margin-bottom: 6vh;
+  }
+
+  @media (min-width: 951px) {
+    .stacked-view {
+      display: none;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .wide-view {
+      display: none;
+    }
   }
 }
