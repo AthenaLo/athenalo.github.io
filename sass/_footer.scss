@@ -6,22 +6,37 @@
   .get-connected {
     $tea-time-height: 7.6vh;
     height: $get-connected-height;
-    width: 65%;
     margin: 0 auto;
     overflow: hidden;
+    width: 84%;
+
+    @media (min-width: 951px) {
+      width: 60%;
+    }
 
     .tea-time {
       margin-top: ($get-connected-height - $tea-time-height) / 2;
       margin-bottom: ($get-connected-height - $tea-time-height) / 2;
       line-height: $tea-time-height;
       background-color: $main-light-color;
-      font-size: 2vh;
+      font-size: 11pt;
       font-family: "gotham-round";
       text-align: center;
       color: $main-dark-color;
 
       .call-to-action {
         text-decoration: underline;
+
+	@media (max-width: 550px) {
+	  display: block;
+	  line-height: 12pt;
+	  padding-bottom: 0.5vh;
+	  transform: translateY(-1vh);
+        }
+      }
+
+      @media (max-width: 550px) {
+        transform: translateY(-1.2vh);
       }
     }
   }
