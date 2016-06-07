@@ -8,6 +8,32 @@ body {
   background-color: white;
 }
 
+/* Just adapted the Skeleton CSS source to apply global width
+ * restrictions to .row instead of .container because .container 
+ * also does some funky stuff with overflows that we don't want. */
+.row {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* For devices wider than 400px */
+@media (min-width: 400px) {
+  .row {
+    width: 85%;
+    padding: 0;
+  }
+}
+
+/* For devices wider than 550px */
+@media (min-width: 550px) {
+  .row {
+    width: 80%;
+  }
+}
+
 @mixin single-img($url) {
   background-image: url($url);
   background-size: contain;
