@@ -1,0 +1,72 @@
+@import 'project_details';
+
+@include opening-image("../img/BigEasy_Hero.png");
+
+@include title-banner;
+
+
+.project-description {
+  @include full-width-text-block;
+  @include full-width-image-block;
+  @include text-block;
+
+  $solution-carousel-height: 75vh;
+  @include solution-carousel($solution-carousel-height);
+
+  .image-block-1 {
+    padding-top: 3vh;
+    margin-bottom: 3.5vh;
+  }
+
+  .be-problem-img {
+    @include single-img("../img/BigEasy_Problem.png");
+    height: 48vh;
+  }
+
+  .be-process-1-img {
+    @include single-img("../img/BigEasy_Process1.png");
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+    height: 55vh;
+  }
+
+  .be-process-2-img {
+    @include single-img("../img/BigEasy_Process2.png");
+    height: 70vh;
+    margin-bottom: 4vh;
+  }
+
+  .be-process-3-img {
+    @include single-img("../img/BigEasy_Process3.png");
+    height: 70vh;
+    margin-bottom: 4vh;
+  }
+
+  .be-solution-1-img {
+    @include single-img("../img/BigEasy_Solution1.png");
+    height: $solution-carousel-height;
+  }
+
+  .be-solution-2-img {
+    @include single-img("../img/BigEasy_Solution2.png");
+    height: $solution-carousel-height;
+  }
+
+  .be-solution-3-img {
+    @include single-img("../img/BigEasy_Solution3.png");
+    height: $solution-carousel-height;
+  }
+
+  .be-solution-4-img {
+    @include single-img("../img/BigEasy_Solution4.png");
+    height: $solution-carousel-height;
+  }
+
+  @include afterword;
+
+  .image-block-3 {
+    @include single-img("../img/BigEasy_Afterword.png");
+    height: 55vh;
+    margin-top: 2vh;
+  }
+}
