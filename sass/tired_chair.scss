@@ -14,23 +14,46 @@
 
   @include afterword;
 
+  .text-block-2 {
+    margin-top: 5vh;
+  }
+
   .tired-chair-problem-img {
     @include single-img("../img/TiredChair_Problem.png");
-    height: 48vh;
+    height: 52vh;
   }
 
   .tired-chair-process-img {
     @include single-img("../img/TiredChair_Process.png");
     height: 75vh;
+    margin-bottom: 5vh;
   }
 
   .tired-chair-solution-1-img {
     @include single-img("../img/TiredChair_Solution1.png");
     height: $solution-carousel-height;
+    margin-top: 2vh;
   }
 
   .tired-chair-solution-2-img {
     @include single-img("../img/TiredChair_Solution2.png");
     height: $solution-carousel-height;
+    margin-top: 2vh;
+  }
+
+  @media (max-width: 700px) {
+    .tired-chair-process-img {
+      height: 40vh;
+    }
+
+    @include solution-carousel(40vh);
+
+    .tired-chair-solution-1-img {
+      height: 40vh;
+    }
+
+    .tired-chair-solution-2-img {
+      height: 40vh;
+    }
   }
 }

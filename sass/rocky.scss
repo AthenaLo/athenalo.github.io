@@ -93,4 +93,36 @@
     @include single-img('../img/Rocky_Afterword6.png');
     height: 87vh;
   }
+
+  @media (max-width: 700px) {
+    @include solution-carousel(40vh);
+
+    .rocky-process-1-img {
+      height: 40vh;
+    }
+
+    .rocky-process-2-img, .rocky-process-3-img {
+      height: 22vh;
+    }
+
+    .rocky-solution-1-img, .rocky-solution-2-img {
+      height: 40vh;
+    }
+
+    .image-block-3 {
+      height: 50vh;
+    }
+
+    .image-block-4, .image-block-5 {
+      height: 40vh;
+    }
+
+    .image-block-6 {
+      height: 60vh;
+    }
+
+    .image-block-7, .image-block-8 {
+      height: 40vh;
+    }
+  }
 }

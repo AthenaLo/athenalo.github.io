@@ -57,4 +57,20 @@
     height: 60vh;
     margin-top: 4vh;
   }
+
+  @media (max-width: 700px) {
+    @include solution-carousel(40vh);
+  }
+
+  .uae-process-img {
+    height: 16vh;
+  }
+
+  .uae-solution-1-img, .uae-solution-2-img, .uae-solution-3-img, .uae-solution-4-img {
+    height: 40vh;
+  }
+
+  .image-block-3 {
+    height: 36vh;
+  }
 }

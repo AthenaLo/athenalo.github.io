@@ -69,4 +69,25 @@
     height: 55vh;
     margin-top: 2vh;
   }
+
+  @media (max-width: 700px) {
+    @include solution-carousel(40vh);
+
+    .be-process-1-img {
+      height: 25vh;
+    }
+
+    .be-process-2-img, .be-process-3-img {
+      height: 30vh;
+    }
+
+    .be-solution-1-img, .be-solution-2-img, .be-solution-3-img, .be-solution-4-img {
+      margin-top: 4vh;
+      height: 40vh;
+    }
+
+    .image-block-3 {
+      height: 40vh;
+    }
+  }
 }

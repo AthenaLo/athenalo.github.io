@@ -32,6 +32,7 @@
 .panel#work {
   overflow: auto;
   min-height: $work-height;
+  margin-bottom: 5vh;
 
   .work-container {
     padding-top: 8vh;
@@ -103,6 +104,7 @@
   background-color: $main-dark-color;
   overflow: visible;
   height: 100vh;
+  margin-bottom: 5vh;
 
   .header-block {
     background-color: $main-light-color;

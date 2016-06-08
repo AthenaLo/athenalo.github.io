@@ -51,8 +51,28 @@
     height: $solution-carousel-height;
   }
 
-  .vest-frands-solution-1-img {
-    @include single-img("../img/VestFrands_Solution1.png");
-    height: $solution-carousel-height;
+  @media (max-width: 700px) {
+    @include solution-carousel(40vh);
+
+    .vest-frands-problem-img {
+      margin-top: 3vh;
+      height: 30vh;
+    }
+
+    .text-block-2 {
+      margin-top: 4vh;
+    }
+
+    .vest-frands-process-1-img {
+      height: 30vh;
+    }
+
+    .vest-frands-process-2-img {
+      height: 30vh;
+    }
+
+    .vest-frands-solution-1-img, .vest-frands-solution-2-img, .vest-frands-solution-3-img, .vest-frands-solution-4-img {
+      height: 40vh;
+    }
   }
 }

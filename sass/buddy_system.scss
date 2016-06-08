@@ -78,4 +78,24 @@
     height: 75vh;
     margin-top: 6vh;
   }
+
+  @media (max-width: 700px) {
+    @include solution-carousel(40vh);
+    
+    .buds-problem-img {
+      height: 55vh;
+    }
+
+    .buds-process-1-img, .buds-process-2-img, .buds-process-3-img {
+      height: 40vh;
+    }
+
+    .buds-solution-1-img, .buds-solution-2-img, .buds-solution-3-img, .buds-solution-4-img, .buds-solution-5-img, .buds-solution-6-img {
+      height: 40vh;
+    }
+
+    .image-block-3 {
+      height: 40vh;
+    }
+  }
 }
