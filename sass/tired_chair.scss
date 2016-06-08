@@ -1,0 +1,36 @@
+@import 'project_details';
+
+@include opening-image("../img/TiredChair_Hero.png");
+
+@include title-banner;
+
+.project-description {
+  @include full-width-text-block;
+  @include full-width-image-block;
+  @include text-block;
+
+  $solution-carousel-height: 75vh;
+  @include solution-carousel($solution-carousel-height);
+
+  @include afterword;
+
+  .tired-chair-problem-img {
+    @include single-img("../img/TiredChair_Problem.png");
+    height: 48vh;
+  }
+
+  .tired-chair-process-img {
+    @include single-img("../img/TiredChair_Process.png");
+    height: 75vh;
+  }
+
+  .tired-chair-solution-1-img {
+    @include single-img("../img/TiredChair_Solution1.png");
+    height: $solution-carousel-height;
+  }
+
+  .tired-chair-solution-2-img {
+    @include single-img("../img/TiredChair_Solution2.png");
+    height: $solution-carousel-height;
+  }
+}
