@@ -91,9 +91,17 @@
 
     .project-text {
       color: $main-dark-color;
-      height: 5vh;
+      height: 3vh;
       font-family: "gotham-round";
-      font-size: 1.5vh;
+      font-size: 1.6vh;
+      padding-left: 1.2vw;
+      padding-right: 1.2vw;
+    }
+    .project-subtitle {
+      color:#8E8E8E;
+      height: 2vh;
+      font-family: "gotham-round";
+      font-size: 1.3vh;
       padding-left: 1.2vw;
       padding-right: 1.2vw;
     }
