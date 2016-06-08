@@ -20,12 +20,13 @@
 
   .tired-chair-problem-img {
     @include single-img("../img/TiredChair_Problem.png");
-    height: 52vh;
+    height: 40vh;
+    margin-top: 2vh;
   }
 
   .tired-chair-process-img {
     @include single-img("../img/TiredChair_Process.png");
-    height: 75vh;
+    height: 50vh;
     margin-bottom: 5vh;
   }
 
@@ -49,11 +50,11 @@
     @include solution-carousel(40vh);
 
     .tired-chair-solution-1-img {
-      height: 40vh;
+      height: 65vh;
     }
 
     .tired-chair-solution-2-img {
-      height: 40vh;
+      height: 65vh;
     }
   }
 }

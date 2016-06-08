@@ -20,46 +20,50 @@
 
   .be-problem-img {
     @include single-img("../img/BigEasy_Problem.png");
-    height: 48vh;
+    height: 40vh;
   }
 
   .be-process-1-img {
     @include single-img("../img/BigEasy_Process1.png");
     margin-top: 3vh;
     margin-bottom: 6vh;
-    height: 55vh;
+    height: 20vh;
   }
 
   .be-process-2-img {
     @include single-img("../img/BigEasy_Process2.png");
-    height: 70vh;
+    height: 40vh;
     margin-bottom: 4vh;
   }
 
   .be-process-3-img {
     @include single-img("../img/BigEasy_Process3.png");
-    height: 70vh;
+    height: 48vh;
     margin-bottom: 4vh;
   }
 
   .be-solution-1-img {
     @include single-img("../img/BigEasy_Solution1.png");
     height: $solution-carousel-height;
+    margin-top: 4vh;
   }
 
   .be-solution-2-img {
     @include single-img("../img/BigEasy_Solution2.png");
     height: $solution-carousel-height;
+    margin-top: 4vh;
   }
 
   .be-solution-3-img {
     @include single-img("../img/BigEasy_Solution3.png");
     height: $solution-carousel-height;
+    margin-top: 4vh;
   }
 
   .be-solution-4-img {
     @include single-img("../img/BigEasy_Solution4.png");
     height: $solution-carousel-height;
+    margin-top: 4vh;
   }
 
   @include afterword;

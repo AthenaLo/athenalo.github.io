@@ -29,18 +29,18 @@
 
   .rocky-process-1-img {
     @include single-img("../img/Rocky_Process1.png");
-    height: 76vh;
+    height: 53vh;
   }
 
   .rocky-process-2-img {
     @include single-img("../img/Rocky_Process2.png");
-    height: 34vh;
+    height: 22vh;
     margin-bottom: 2.5vh;
   }
 
   .rocky-process-3-img {
     @include single-img("../img/Rocky_Process3.png");
-    height: 40vh;
+    height: 27vh;
     margin-bottom: 7vh;
   }
 
