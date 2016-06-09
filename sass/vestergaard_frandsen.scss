@@ -23,6 +23,10 @@
     margin-top: 5vh;
   }
 
+  .process-text-block {
+    margin-top: 4vh;
+  }
+
   .vest-frands-process-1-img {
     @include single-img("../img/VestFrands_Process1.png");
     height: 40vh;
