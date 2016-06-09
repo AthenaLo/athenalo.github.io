@@ -19,6 +19,10 @@
     height: 53vh;
   }
 
+  .problem-text-block {
+    margin-top: 5vh;
+  }
+
   .vest-frands-process-1-img {
     @include single-img("../img/VestFrands_Process1.png");
     height: 40vh;
@@ -73,6 +77,10 @@
 
     .vest-frands-solution-1-img, .vest-frands-solution-2-img, .vest-frands-solution-3-img, .vest-frands-solution-4-img {
       height: 40vh;
+    }
+
+    .problem-text-block {
+      margin-top: 1vh;
     }
   }
 }
