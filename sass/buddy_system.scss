@@ -21,17 +21,17 @@
 
   .buds-process-1-img {
     @include single-img("../img/Buds_Process1.png");
-    height: 70vh;
+    height: 60vh;
   }
 
   .buds-process-2-img {
     @include single-img("../img/Buds_Process2.png");
-    height: 70vh;
+    height: 60vh;
   }
 
   .buds-process-3-img {
     @include single-img("../img/Buds_Process3.png");
-    height: 70vh;
+    height: 60vh;
     margin-bottom: 5vh;
   }
 
@@ -75,8 +75,8 @@
 
   .image-block-3 {
     @include single-img('../img/Buds_Afterword.png');
-    height: 75vh;
-    margin-top: 6vh;
+    height: 65vh;
+    margin-top: 4vh;
   }
 
   @media (max-width: 700px) {
