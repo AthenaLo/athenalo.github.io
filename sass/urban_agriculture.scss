@@ -58,7 +58,7 @@
     margin-top: 4vh;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     @include solution-carousel(40vh);
   }
 
@@ -67,7 +67,7 @@
   }
 
   .uae-solution-1-img, .uae-solution-2-img, .uae-solution-3-img, .uae-solution-4-img {
-    height: 65vh;
+    height: 45vh;
   }
 
   .image-block-3 {
