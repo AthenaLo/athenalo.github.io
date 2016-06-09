@@ -15,7 +15,11 @@
   @include afterword;
 
   .text-block-2 {
-    margin-top: 5vh;
+    margin-top: 5vh;  
+  }
+
+  .full-width-image-block {
+    min-height: 45vh;
   }
 
   .tired-chair-problem-img {
@@ -47,14 +51,14 @@
       height: 40vh;
     }
 
-    @include solution-carousel(40vh);
+    @include solution-carousel(35vh);
 
     .tired-chair-solution-1-img {
-      height: 65vh;
+      height: 35vh;
     }
 
     .tired-chair-solution-2-img {
-      height: 65vh;
+      height: 35vh;
     }
   }
 }
