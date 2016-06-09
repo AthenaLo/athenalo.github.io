@@ -6,6 +6,10 @@
 
 @include text-block;
 
+.opening {
+  background-position: 100%;
+}
+
 .project-description {
   @include full-width-text-block;
   @include full-width-image-block;
