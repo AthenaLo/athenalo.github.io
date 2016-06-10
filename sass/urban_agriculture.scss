@@ -26,7 +26,7 @@
     margin-bottom: 5vh;
   }
 
-  $solution-carousel-height: 75vh;
+  $solution-carousel-height: 50vh;
 
   @include solution-carousel($solution-carousel-height);
 
@@ -59,7 +59,7 @@
   }
 
   @media (max-width: 800px) {
-    @include solution-carousel(40vh);
+    @include solution-carousel(50vh);
   }
 
   .uae-process-img {
@@ -67,7 +67,7 @@
   }
 
   .uae-solution-1-img, .uae-solution-2-img, .uae-solution-3-img, .uae-solution-4-img {
-    height: 45vh;
+    height: 50vh;
   }
 
   .image-block-3 {
