@@ -1,259 +1,331 @@
-<!DOCTYPE htmL>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta name="viewport" content="initial-scale=1">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/slick/slick.css">
-  <link rel="stylesheet" href="css/slick/slick-theme.css">
-  
-  <!-- JavaScripts -->
-  <script src="js/jquery-1.12.4.min.js"></script>
-  <script src="js/jquery-outside-events.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/carousel.js"></script>
-  <script src="js/hamburger.js"></script>
-  <script src="js/ga.js"></script>
+    <head>
 
-  <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css">
 
-  <script src="js/scroll.js"></script>
-  <script src="js/index.js"></script>
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="u-full-width navbar">
-    <div class="container">
-      <div class="u-pull-left">
-        <a class="nav" href="index.html#home">
-          <div class="u-pull-left nav-cube"></div>
-          <div class="u-pull-left nav-title">Athena Lo</div>
-        </a>
-      </div>
-  
-      <div class="u-pull-right">
-      <a href="#void"><i class="fa fa-bars hamburger"></i></a>
-        <ul class="nav-links">
-          <li class="u-pull-left nav-link"><a class="nav" href="index.html#work">Work</a></li>
-          <li class="u-pull-left nav-link"><a class="nav" href="index.html#about">About</a></li>
-          <li class="u-pull-left nav-link"><a class="nav" href="index.html#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  
-    <div class="mobile-nav-links hide-mobile-nav-links">
-      <ul class="links u-cf">
-        <a class="nav" href="index.html#work">
-          <li class="nav-link top-nav-link">Work</li>
-        </a>
-        <a class="nav" href="index.html#about">
-          <li class="nav-link">About</li>
-        </a>
-        <a class="nav" href="index.html#contact">
-          <li class="nav-link">Contact</li>
-        </a>
-      </ul>
-    </div>
-  </nav>
+        <script src="js/scroll.js"></script>
+        <script src="js/index.js"></script>
 
-  <a id="home"></a>
-
-  <!-- Splash photo -->
-  <section id="main">
-    <section class="panel" id="home">
-      <div class="seven columns greeting-block">
-          Oh hello! You found me!
-      </div>
-    </section>
-
-    <!-- Work -->
-    <a id="work"></a>
-    <section class="panel" id="work">
-      <div class="container work-container">
-        <div class="row">
-          <div class="one-third column project-card">
-            <a href="video_feedback.html">
-              <div class="project-image" id="video-feedback"></div>
-              <div class="project-text">Student Project Feedback Loop
-                <div class="project-subtitle">UX/UI for eSpark Learning</div>
-              </div>
-            </a>
-          </div>
-
-          <div class="one-third column project-card">
-            <a href="rocky.html">
-              <div class="project-image" id="student-delight"></div>
-              <div class="project-text">Rocky, the eSpark Edutar
-                <div class="project-subtitle">UX/UI for eSpark Learning</div>
-              </div>
-            </a>
-          </div>
-
-          <div class="one-third column project-card">
-            <a href="buddy_system.html">
-              <div class="project-image" id="buddy-system"></div>
-              <div class="project-text">The Buddy System
-                <div class="project-subtitle">UX/Product Design</div>
-              </div>
-            </a>
-          </div>
+        <meta charset="utf-8">
+        <title>Athena Lo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme-hyperblue.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    </head>
+    <body class="scroll-assist">
+        <!--Nav starts here-->
+        <div class="nav-container">
+            <a id="top"></a>
+            <nav>
+                <div class="nav-bar">
+                    <div class="module left">
+                        <a href="home-capital-firm.html">
+                            <img class="logo logo-light" alt="Athena Lo" src="img/nameplate-light2.png" />
+                            <img class="logo logo-dark" alt="Athena Lo" src="img/nameplate-dark2.png" />
+                        </a>
+                    </div>
+                    <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                        <i class="ti-menu"></i>
+                    </div>
+                    <div class="module-group right">
+                        <div class="module left">
+                            <ul class="menu">
+                                <li>
+                                    <a class="nav" href="index.html#work">
+                                        Work
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav" href="index.html#about">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav" href="index.html#contact">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <div class="row">
-          <div class="one-third column project-card">
-            <a href="urban_agriculture.html">
-              <div class="project-image" id="urban-agriculture"></div>
-              <div class="project-text">Urban Agriculture
-                <div class="project-subtitle">Exhibit Design</div>
-              </div>
-            </a>
-          </div>
+        <!--Nav ends here-->        
+        <div class="main-container">
+            <section class="fullscreen image-bg parallax">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/OhHello2.JPG"/>
+                </div>
+                <div class="align-bottom text-center">
+                    <a class="btn btn-white mb32" href="mailto:athena.w.lo@gmail.com?subject=A note!">Send a note!</a>
+                    <ul class="list-inline social-list mb24">
+                        <li>
+                            <a href="www.linkedin.com/in/athena-lo">
+                                <i class="ti-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="www.facebook.com/AthenaLo">
+                                <i class="ti-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="www.fatandhappyforever.tumblr.com">
+                                <i class="ti-tumblr-alt"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="www.twitter.com/AthenaWhoa">
+                                <i class="ti-twitter-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <a id="work"></a>
+            <section class="bg-dark" id="work">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h6 class="uppercase">Work</h6>
+                            <hr class="mb80 mb-xs-24">
+                        </div>
+                    </div>
+                    <div class="row v-align-children mb56">
+                        <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+                            <img alt="Screenshot" src="img/vf_thumb.png" />
+                        </div>
+                        <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">
+                            <h3>Student Performance Task Feedback Loop</h3>
+                            <p class="lead">
+                                Performance tasks are asked of students at the end of each quest in eSpark to show a deeper understanding of the skill they have just practiced. To truly bring value to this feature, there needed to be a way for teachers to give quick and meaningful feedback.
+                            </p>
+                            <a class="btn-filled btn" href="video_feedback.html">Explore Project</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h6 class="uppercase mb24 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1" style="color:gold">Project pages are currently undergoing renovation. Please pardon the dust!</h6>
+                    </div>
+                    <div class="row mb64">
+                        <div class="col-md-3 col-sm-3 mb40">
+                            <a href="ph_pharmacy.html">
+                            <img alt="Pic" class="mb8" src="img/capital-t-2.jpg"/>
+                            </a>
+                            <h6 class="uppercase mb0 color-projecttitle">Pharmacy Solution</h6>
+                            <span>UX / UI for Procured Health</span>
+                        </div>
+                        <div class="col-md-3 col-sm-3 mb40">
+                            <a href="rocky.html">
+                            <img alt="Pic" class="mb8" src="img/Rocky_thumb.png"/>
+                            </a>
+                            <h6 class="uppercase mb0 color-projecttitle">Rocky the Edutar</h6>
+                            <span>UX / UI for eSpark Learning</span>
+                        </div>
+                        <div class="col-md-3 col-sm-3 mb40">
+                            <a href="buddy_system.html">
+                            <img alt="Pic" class="mb8" src="img/Buds_Thumbnail.png" />
+                            <h6 class="uppercase mb0 color-projecttitle">The Buddy System</h6>
+                            <span>UX / Product Design</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h6 class="uppercase">Miscellaneous Projects</h6>
+                            <hr class="mb64 mb-xs-24">
+                        </div>
+                    </div>
+                    <div class="row">                        
+                        <div class="col-md-3 col-sm-4 mb24">
+                            <a href="urban_agriculture.html">
+                            <img alt="Pic" class="mb8" src="img/UAE_Thumbnail.png" />
+                            <h6 class="uppercase mb0 color-projecttitle">Urban Agriculture</h6>
+                            <span>Exhibit Design</span>
+                        </div>
+                        <div class="col-md-3 col-sm-4 mb24">
+                            <a href="tired-chair.html">
+                            <img alt="Pic" class="mb8" src="img/TiredChair_Thumbnail.png" />
+                            <h6 class="uppercase mb0 color-projecttitle">Rest Your Tired Bones</h6>
+                            <span>Furniture Design</span>
+                        </div>
+                        <div class="col-md-3 col-sm-4 mb24">
+                            <a href="vestergaard_frandsen.html">
+                            <img alt="Pic" class="mb8" src="img/VestFrands_Thumbnail.png" />
+                            <h6 class="uppercase mb0 color-projecttitle">Vestergaard Frandsen Exploration</h6>
+                            <span>Product / Business Design</span>
+                        </div>
+                        <div class="col-md-3 col-sm-4 mb24">
+                            <a href="big_easy.html">
+                            <img alt="Pic" class="mb8" src="img/BigEasy_Thumbnail.png" />
+                            <h6 class="uppercase mb0 color-projecttitle">The Big Easy</h6>
+                            <span>Furniture Design</span>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <a id="about"></a>
+            <section class="image-bg bg-light parallax overlay pt120 pb96 pt-xs-80 pb-xs-80" id="about">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/aboutabean2.jpg" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h6 class="uppercase">About</h6>
+                            <hr class="mb80 mb-xs-24">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-8">
+                            <a href="https://www.youtube.com/watch?v=KOlvNyseYTY&t=2m23s"><h3 class="mb32">A human bean</h3></a>
+                            <p class="lead">
+                                Hi! I'm Athena, and I really do try to live up to the name. I love examining and deeply understanding problems to craft meaningful, logical, and human-centered solutions.
+                            </p>
+                            <p class="lead">
+                                In my off time, I enjoy creating somethings out of nothing, inventing recipes for baked goods, and trolling my cat.
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <a id="contact"></a>
+            <section class="mt24 pt0 pb0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h6 class="uppercase">Contact</h6>
+                            <hr class="mb0 mb-xs-0">
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="image-bg bg-dark parallax overlay pt96 pb32 pt-xs-80 pb-xs-80">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/explore.jpg" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="text-center color-body">Questions? Tea time?</h3>
+                        </div>
+                    </div>
+                    <div class="row mb80 mb-xs-0">
+                        <div class="col-md-12 col-sm-12">
+                            <p class="lead text-center">
+                                <span class="call-to-action"><a class="btn btn-white mb0" href="mailto:athena.w.lo@gmail.com">I'd love to hear from you!</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <footer class="footer-1 bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h4 class="uppercase text-center">
+                                I also exist here:
+                            </h4>
+                            <ul class="list-inline text-center social-list mb48">
+                                <li>
+                                    <a href="www.linkedin.com/in/athena-lo"><i class="ti-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="www.facebook.com/AthenaLo"><i class="ti-facebook"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-          <div class="one-third column project-card">
-            <a href="tired_chair.html">
-              <div class="project-image" id="tired-chair"></div>
-              <div class="project-text">Rest Your Tired Bones
-                <div class="project-subtitle">Furniture Design</div>
-              </div>  
-            </a>
-          </div>
-
-          <div class="one-third column project-card">
-            <a href="vestergaard_frandsen.html">
-              <div class="project-image" id="vest-frands"></div>
-              <div class="project-text">Vestergaard Frandsen Exploration
-                <div class="project-subtitle">Product/Business</div>
-              </div>  
-            </a>
-          </div>
+                    <div class="row">    
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget">
+                                <h6 class="uppercase mb0">
+                                    <a class="color-projecttitle" href="www.fatandhappyforever.tumblr.com">
+                                        <i class="ti-tumblr-alt"></i>
+                                        Fat & Happy Forever Recipes
+                                    </a>        
+                                </h6>
+                                <hr>
+                                <ul class="link-list recent-posts">
+                                    <li>
+                                        <a href="http://fatandhappyforever.tumblr.com/post/99293570589/butternut-squash-and-kale-risotto-because-fall">Butternut Squash and Kale Risotto</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://fatandhappyforever.tumblr.com/post/97294478879/summertime-special-double-lemon-y-feature-lemon">Lemon and Dill Salmon, with Watermelon Lemonade</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://fatandhappyforever.tumblr.com/post/60130783919/bacon-weave-because-bacon-with-special-guest">Maple and Brown Sugar Cupcakes with Bacon Weave</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget">
+                                <h6 class="uppercase mb0"><a class="color-projecttitle" href="www.instagram.com/athenawhoa">Shutterbuggin'</a></h6>
+                                <hr>
+                                <div class="instafeed" data-user-name="athenawhoa">
+                                    <ul></ul>
+                                </div>
+                            </div>
+                            <!--end of widget-->
+                        </div>                        
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget">
+                                <h6 class="uppercase mb0">
+                                    <a class="color-projecttitle" href="www.twitter.com/AthenaWhoa">
+                                        <i class="ti-twitter-alt"></i>
+                                        Tweet Tweet
+                                    </a>
+                                </h6>
+                                <hr>
+                                <div class="twitter-feed">
+                                    <div class="tweets-feed" data-widget-id="555266004">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="sub">&copy; Copyright 2017 - Athena Lo</span>
+                        </div>
+                    </div>
+                </div>
+                <!--end of container-->
+                <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Beam me up</a>
+            </footer>
         </div>
-
-        <div class="row">
-          <div class="one-third column project-card">
-            <a href="big_easy.html">
-              <div class="project-image" id="big-easy"></div>
-              <div class="project-text">The Big Easy
-                <div class="project-subtitle">Furniture Design</div>
-              </div>  
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <a id="about"></a>
-    <section class="panel" id="about">
-      <div class="row banner-row">
-        <!-- When screen is narrow -->
-        <div class="stacked-view">
-          <div class="seven columns header-block">
-            <a class="im-a-human-bean" href="https://www.youtube.com/watch?v=KOlvNyseYTY&t=2m23s">
-              A human bean
-            </a>
-          </div>
-        </div>
-
-        <!-- When screen is wide -->
-        <div class="wide-view">
-          <div class="six columns header-block">
-            <a class="im-a-human-bean" href="https://www.youtube.com/watch?v=KOlvNyseYTY&t=2m23s">
-              A human bean
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <!-- When screen is narrow -->
-        <div class="stacked-view">
-          <div class="row">
-            <div class="u-full-width selfie">
-            </div>
-          </div>
-          <div class="row">
-            <div class="u-full-width description">
-              <p>
-              Hi! I'm Athena, and I really do try to live up to the name. 
-              I love examining and deeply understanding problems to craft meaningful, 
-              logical, and human-centered solutions.
-              </p>
-              <p>
-              Currently, I design impactful digital experiences for students and teachers, 
-              focusing on ways to facilitate achievement and engagement.
-              </p>
-              <p>
-              In my off time, I enjoy creating somethings out of nothing, 
-              inventing recipes for baked goods, and contemplating ways to save the world.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- When screen is wide -->
-        <div class="wide-view">
-          <div class="row">
-            <div class="five columns description">
-              <p>
-              Hi! I'm Athena, and I really do try to live up to the name. 
-              I love examining and deeply understanding problems to craft meaningful, 
-              logical, and human-centered solutions.
-              </p>
-              <p>
-              Currently, I design impactful digital experiences for students and teachers, 
-              focusing on ways to facilitate achievement and engagement.
-              </p>
-              <p>
-              In my off time, I enjoy creating somethings out of nothing, 
-              inventing recipes for baked goods, and contemplating ways to save the world.
-              </p>
-            </div>
-
-            <div class="seven columns selfie"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <a id="contact"></a>
-    <!-- Contact -->
-    <section class="panel" id="contact">
-      <section class="get-connected">
-        <div class="container">
-          <div class="tea-time">
-    	      Questions? Tea time? <span class="call-to-action"><a href="mailto:athena.w.lo@gmail.com">I'd love to hear from you!</a></span>
-          </div>
-        </div>
-      </section>
-    
-      <section class="social">
-        <section class="social-links">
-          <div class="preamble-text">I also exist here:</div>
-    
-          <div class="links">
-    	<a href="https://www.linkedin.com/in/athena-lo-9474bb19">
-    	  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-    	</a>
-    	<a href="http://fatandhappyforever.tumblr.com/">
-    	  <i class="fa fa-tumblr-square" aria-hidden="true"></i>
-    	</a>
-    	<a href="https://twitter.com/AthenaWhoa">
-    	  <i class="fa fa-twitter-square" aria-hidden="true"></i>
-    	</a>
-    	<a href="https://www.instagram.com/athenawhoa/">
-    	  <i class="fa fa-instagram" aria-hidden="true"></i>
-    	</a>
-          </div>
-        </section>
-    
-        <section class="postamble">
-          &copy; 2016 Athena Lo
-        </section>
-      </section>
-    </section>
-  </section>
-</body>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/flickr.js"></script>
+        <script src="js/flexslider.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/masonry.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
