@@ -1,201 +1,406 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta name="viewport" content="initial-scale=1">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/slick/slick.css">
-  <link rel="stylesheet" href="css/slick/slick-theme.css">
-  
-  <!-- JavaScripts -->
-  <script src="js/jquery-1.12.4.min.js"></script>
-  <script src="js/jquery-outside-events.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/carousel.js"></script>
-  <script src="js/hamburger.js"></script>
-  <script src="js/ga.js"></script>
-
-  <link rel="stylesheet" href="css/video_feedback.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="u-full-width navbar">
-    <div class="container">
-      <div class="u-pull-left">
-        <a class="nav" href="index.html#home">
-          <div class="u-pull-left nav-cube"></div>
-          <div class="u-pull-left nav-title">Athena Lo</div>
-        </a>
-      </div>
-  
-      <div class="u-pull-right">
-      <a href="#void"><i class="fa fa-bars hamburger"></i></a>
-        <ul class="nav-links">
-          <li class="u-pull-left nav-link"><a class="nav" href="index.html#work">Work</a></li>
-          <li class="u-pull-left nav-link"><a class="nav" href="index.html#about">About</a></li>
-          <li class="u-pull-left nav-link"><a class="nav" href="index.html#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  
-    <div class="mobile-nav-links hide-mobile-nav-links">
-      <ul class="links u-cf">
-        <a class="nav" href="index.html#work">
-          <li class="nav-link top-nav-link">Work</li>
-        </a>
-        <a class="nav" href="index.html#about">
-          <li class="nav-link">About</li>
-        </a>
-        <a class="nav" href="index.html#contact">
-          <li class="nav-link">Contact</li>
-        </a>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Opening image -->
-  <section class="opening"></section>
-
-  <!-- Project title -->
-    <section class="title u-full-width">
-      <p class="project-title">Student-Teacher Project Feedback Loop</p>
-      <p class="client">UX/UI for eSpark Learning</p>
-    </section>
-
-  <!-- Project details -->
-  <section class="project-description">
-     <!-- Summary -->
-    <div class="row full-width-text-block text-block-1">
-      Performance tasks are asked of students at the end of each quest in eSpark to show 
-      a deeper understanding of the skill they have just practiced. To truly bring value 
-      to this feature, there needed to be a way for teachers to give quick and meaningful 
-      feedback.
-    </div>
-
-    <!-- Problem -->
-    <div class="full-width-image-block image-block-1 u-full-width">
-      <div class="row">
-        <div class="seven columns vf-problem-img"></div>
-        <div class="five columns text-block">
-          <p>
-            We noticed that students were making teach-back videos of low quality (as in, 
-            students answered custom prompts incorrectly or inaudibly), and there was 
-            no easy way for teachers to access their students' work. 
-          </p>
-
-          <p>
-            We examined what we called the "Cycle of Poorly Made Student Videos" to 
-            determine that teachers needed direct ways to find and give feedback on 
-            students' projects in order for quality to improve.
-          </p>
+    <head>
+        <meta charset="utf-8">
+        <title>Athena Lo - Student Performance Task Feedback Loop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme-hyperblue.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    </head>
+    <body class="scroll-assist">
+        <!--Nav starts here-->
+        <div class="nav-container">
+            <a id="top"></a>
+            <nav>
+                <div class="nav-bar">
+                    <div class="module left">
+                        <a href="index.html">
+                            <img class="logo logo-light" alt="Athena Lo" src="img/nameplate-light2.png" />
+                            <img class="logo logo-dark" alt="Athena Lo" src="img/nameplate-dark2.png" />
+                        </a>
+                    </div>
+                    <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                        <i class="ti-menu"></i>
+                    </div>
+                    <div class="module-group right">
+                        <div class="module left">
+                            <ul class="menu">
+                                <li>
+                                    <a class="nav" href="index.html#work">
+                                        Work
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav" href="index.html#about">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav" href="index.html#contact">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </div>
-    </div>
-
-    <!-- Process -->
-    <div class="row full-width-text-block text-block-2">
-      This is the first time we implemented a direct in-app loop of communication between 
-      student and teacher. The flow had to be simple and discoverable so that we don't end 
-      up having broken links, and subsequently perpetuate the cycle of poorly made student videos.
-    </div>
-    <div class="row">
-      <div class="vf-process-1-img"></div>
-    </div>
-    <div class="row">
-      <div class="vf-process-2-img"></div>
-    </div>
-    <div class="row">
-      <div class="vf-process-3-img"></div>
-    </div>
-    <div class="row">
-      <div class="vf-process-4-img"></div>
-    </div>
-
-    <!-- Solution -->
-    <div class="full-width-image-block image-block-2 u-full-width">
-      <div class="row text-block">
-        <p>
-          This feature was launched and rolled out to all partners in November of 2015. 
-          Teachers receive direct links to recently submitted student videos on a weekly basis. 
-          Teachers can quickly give student projects a rating out of four stars, accompanied by 
-          an optional custom comment.
-        </p>
-
-        <p>
-          Students see personalized feedback in their own app environment and can return to 
-          review it at any time.
-        </p>
-      </div>
-      <div class="row">
-        <div class="solution-carousel">
-          <div class="vf-solution-1-img"></div>
-          <div class="vf-solution-2-img"></div>
-          <div class="vf-solution-3-img"></div>
-          <div class="vf-solution-4-img"></div>
-          <div class="vf-solution-5-img"></div>
-          <div class="vf-solution-6-img"></div>
-          <div class="vf-solution-7-img"></div>
+        <!--Nav ends here-->
+        <div class="main-container">
+            <section class="page-title page-title-4 bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3 class="uppercase mb0">Student Performance Task Feedback Loop</h3>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="pt0 pb40 bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>For:</span>
+                            <h6 class="uppercase mb0">eSpark Learning</h6>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Role:</span>
+                            <h6 class="uppercase mb0">Research, UX, UI</h6>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Turnaround:</span>
+                            <h6 class="uppercase mb0">August - November 2015</h6>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Platform:</span>
+                            <h6 class="uppercase mb0">Web, Tablet</h6>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="fullscreen image-bg parallax">
+                <div class="background-image-holder">
+                    <img alt="Feature Image" class="col-xs-12 p0" src="img/vf_hero.jpg" />
+                </div>
+            </section>
+            <section class="pt56 pb0">
+                <div class="container">
+                    <div class="row mb56 mb-xs-24">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase mb16">Brief</h4>
+                            <p class="lead">
+                                Create a quick and easy way for teachers to provide personal and meaningful feedback on individual student projects, allowing the teacher dashboard to communicate with the student-facing iPad app.
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+            <section class="pt0 pb0">
+                <div class="container">
+                    <div class="row mb48 mb-xs-32">
+                        <div class="col-sm-6">
+                            <div class="mb-xs-32">
+                                <img src="img/studentvideo1.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div>
+                                <img src="img/vf_problem.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pt24 pb56">
+                <div class="container">
+                    <div class="row mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h6 class="uppercase">Context and problem</h6>
+                            <p class="lead">
+                                To demonstrate comprehension, students record a short video to teach back the skill they just practiced in a project called the eSpark Performance Task.
+                            </p>
+                            <p class="lead">
+                                Without accountabiltiy and motivation for students, or ease of use for teachers, the Performance Task feature created a cycle of pain for both groups.
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+            <section class="image-bg parallax overlay pt300 pb60 pt-xs-80 pb-xs-80">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/studentvideo.png" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6">
+                            <h6 class="uppercase">How might we improve the quality of student projects and increase teacher engagement with the eSpark product?</h6>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="pt56">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase mb16">Process</h4>
+                            <p class="lead mb48">Over the span of 4 months, a small and dedicated team of one Project Manager, one Software Engineer, and myself delved into this opportunity space.</p>
+                        </div>
+                    </div>
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-sm-6 mb-xs-16">
+                            <div class="image-caption hover-caption">
+                                <img alt="Project Image" src="img/vf_personas2.png"/>
+                                <div class="caption">
+                                    <p>Personas determined from interviews conducted with kindergarten through 6th grade teachers and students.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="image-caption hover-caption">
+                                <img alt="Captioned Image" src="img/vf_userflow2.png"/>
+                                <div class="caption">
+                                    <p>The feedback feature needed to ensure increased likelihood of a closed loop flow.</p>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 text-center">
+                            <div class="tabbed-content button-tabs">
+                                <ul class="tabs">
+                                    <li class="active">
+                                        <div class="tab-title">
+                                            <span>Sketches</span>
+                                        </div>
+                                        <div class="tab-content">
+                                            <img src="img/vf_sketches.png"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-title">
+                                            <span>Wireframes</span>
+                                        </div>
+                                        <div class="tab-content">
+                                            <img src="img/vf_wireframes.png"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-title">
+                                            <span>Honing UI</span>
+                                        </div>
+                                        <div class="tab-content">
+                                            <img src="img/vf_UI.png"/>
+                                            <!-- Under image explanation in slide
+                                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                                                <p class="lead mt24">
+                                                    Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium.
+                                                </p>
+                                            </div>
+                                            --> 
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>    
+            <section class="image-bg parallax overlay pt300 pb60 pt-xs-80 pb-xs-80">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/wallcrit.jpg"/>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
+                            <h4 class="uppercase mb40 mb-xs-16">Listening to the experts</h4>
+                            <p class="lead mb40">
+                            We leveraged our network of teachers to provide feedback on the flow and interfaces of the teacher experience, learning how they think through prioritizing students needs and project evaluations.
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+            <section class="pb32">
+                <div class="container">
+                    <div class="row pb24">
+                        <div class="col-sm-12 text-center">
+                            <h4 class="uppercase mb16">Closing the Feedback Loop</h4>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="image-slider image-caption hover-caption slider-thumb-controls controls-inside">
+                                <ul class="slides">
+                                    <li>
+                                        <img alt="Captioned Image" src="img/vf_solution1.jpg" />
+                                        <div class="caption">
+                                            <p>Teachers can easily find newly submitted videos through direct links in their weekly digest emails.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img alt="Captioned Image" src="img/vf_solution2.jpg" />
+                                        <div class="caption">
+                                            <p>A video viewer pops up on the students individual drill down page; teachers can watch and rate videos will all necessary context right in their browser.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img alt="Captioned Image" src="img/vf_solution3.jpg" />
+                                        <div class="caption">
+                                            <p>After sending feedback to his/her student, the teacher's dashboard updates to display the rating given.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img alt="Captioned Image" src="img/vf_solution4.jpg" />
+                                        <div class="caption">
+                                            <p>When a student logs into the eSpark app, a notification blinks in the corner alerting him/her to new teacher feedback.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img alt="Captioned Image" src="img/vf_solution5.jpg" />
+                                        <div class="caption">
+                                            <p>In the student mission dashboard, students can see which video, and from which quest, the feedback pertains to.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img alt="Captioned Image" src="img/vf_solution6.jpg" />
+                                        <div class="caption">
+                                            <p>Students can see or hear their teacher's feedback in their previous quest popover while also reviewing their video.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end of image slider-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pt32">
+                <div class="container">
+                    <div class="row v-align-children">
+                        <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+                            <img alt="Screenshot" src="img/vf_results.png" />
+                        </div>
+                        <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">
+                            <h4 class="uppercase">The Results</h4>
+                            <p class="lead">
+                                In the first 7 months after launch, over 32,000 student videos were graded and given unique feedback. We measured the star ratings students earned right after launch in November as well as ratings earned five months post-launch, comparing similar sample sizes.
+                            </p>
+                            <p class="lead">
+                                 Quality of student projects showed improvement as teachers demonstrated that they were engaging with students' efforts. At the end of the observation cycle, there was a 10% increase in percentage of 4 star ratings earned by students in addition a noticeable rightward lean.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Footer starts here-->
+            <footer class="footer-1 bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h4 class="uppercase text-center">
+                                I also exist here:
+                            </h4>
+                            <ul class="list-inline text-center social-list mb48">
+                                <li>
+                                    <a href="http://www.linkedin.com/in/athena-lo"><i class="ti-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.facebook.com/AthenaLo"><i class="ti-facebook"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">    
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget">
+                                <h6 class="uppercase mb0">
+                                    <a class="color-projecttitle" href="http://www.fatandhappyforever.tumblr.com">
+                                        <i class="ti-tumblr-alt"></i>
+                                        Fat & Happy Forever Recipes
+                                    </a>        
+                                </h6>
+                                <hr>
+                                <ul class="link-list recent-posts">
+                                    <li>
+                                        <a href="http://fatandhappyforever.tumblr.com/post/99293570589/butternut-squash-and-kale-risotto-because-fall">Butternut Squash and Kale Risotto</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://fatandhappyforever.tumblr.com/post/97294478879/summertime-special-double-lemon-y-feature-lemon">Lemon and Dill Salmon, with Watermelon Lemonade</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://fatandhappyforever.tumblr.com/post/60130783919/bacon-weave-because-bacon-with-special-guest">Maple and Brown Sugar Cupcakes with Bacon Weave</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget">
+                                <h6 class="uppercase mb0"><a class="color-projecttitle" href="http://www.instagram.com/athenawhoa">Shutterbuggin'</a></h6>
+                                <hr>
+                                <div class="instafeed" data-user-name="athenawhoa">
+                                    <ul></ul>
+                                </div>
+                            </div>
+                            <!--end of widget-->
+                        </div>                        
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget">
+                                <h6 class="uppercase mb0">
+                                    <a class="color-projecttitle" href="http://www.twitter.com/AthenaWhoa">
+                                        <i class="ti-twitter-alt"></i>
+                                        Tweet Tweet
+                                    </a>
+                                </h6>
+                                <hr>
+                                <div class="twitter-feed">
+                                    <div class="tweets-feed" data-widget-id="555266004">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end of widget-->
+                        </div> 
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="sub">&copy; Copyright 2017 - Athena Lo</span>
+                        </div>
+                    </div>
+                </div>
+                <!--end of container-->
+                <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Beam me up</a>
+            </footer>
         </div>
-      </div>
-    </div>
-
-    <!-- Afterword -->
-    <div class="afterword">
-      <div class="row text-block">
-        Since launch, over 32,000 student videos have been graded and given individual, meaningful feedback. 
-        The goal is to ultimately see improvement in the quality of student submissions, whether that be in 
-        presentation skills or mastery of a skill.
-      </div>
-      <div class="row">
-        <div class="image-block-3 u-full-width"></div>
-      </div>
-      <div class="row text-block">
-        When we look at a comparison from the early release to a more recent time, we can see a rightward 
-        shift in earned star ratings. There was a 10% increase in percentage of 4 star ratings earned by student 
-        projects in the latter end of the observation cycle.
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <!-- Contact -->
-  <section class="panel" id="contact">
-    <section class="get-connected">
-      <div class="container">
-        <div class="tea-time">
-  	      Questions? Tea time? <span class="call-to-action"><a href="mailto:athena.w.lo@gmail.com">I'd love to hear from you!</a></span>
-        </div>
-      </div>
-    </section>
-  
-    <section class="social">
-      <section class="social-links">
-        <div class="preamble-text">I also exist here:</div>
-  
-        <div class="links">
-  	<a href="https://www.linkedin.com/in/athena-lo-9474bb19">
-  	  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-  	</a>
-  	<a href="http://fatandhappyforever.tumblr.com/">
-  	  <i class="fa fa-tumblr-square" aria-hidden="true"></i>
-  	</a>
-  	<a href="https://twitter.com/AthenaWhoa">
-  	  <i class="fa fa-twitter-square" aria-hidden="true"></i>
-  	</a>
-  	<a href="https://www.instagram.com/athenawhoa/">
-  	  <i class="fa fa-instagram" aria-hidden="true"></i>
-  	</a>
-        </div>
-      </section>
-  
-      <section class="postamble">
-        &copy; 2016 Athena Lo
-      </section>
-    </section>
-  </section>
-
-</body>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/flickr.js"></script>
+        <script src="js/flexslider.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/masonry.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
