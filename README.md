@@ -1,6 +1,6 @@
 ## Athena's personal website (athenawhoa.com)
 
-The source code for Athena Lo's personal website. Designed by Athena Lo [@AthenaLo](https://github.com/AthenaLo), built by Kairui Wang [@kairuiwang](https://github.com/kairuiwang).
+The source code for Athena Lo's personal website. Designed and built by Athena Lo [@AthenaLo](https://github.com/AthenaLo), utilizing a base template from Medium Rare, with contributions from Kairui Wang [@kairuiwang](https://github.com/kairuiwang).
 
 ## Deploy
 
